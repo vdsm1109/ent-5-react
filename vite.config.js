@@ -6,10 +6,5 @@ export default defineConfig({
   plugins: [react()],
   server: {
     open: true,
-  },
-  build: {
-    rollupOptions: {
-      external: ['react-dom/client']
-    }
   }
 })
