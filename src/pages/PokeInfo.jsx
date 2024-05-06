@@ -20,9 +20,8 @@ const PokeInfo = () => {
     const obj = {
         width: '50%',
     }
-    /**className={`pokecard-${pokemon?.types[0].type.name}`} */
     return (
-        <div>
+        <>
             <header className='pokeinfo__header'>
                 <img src="../../assets/pokemon_logo.png" alt="" />
             </header>
@@ -69,13 +68,7 @@ const PokeInfo = () => {
                                 ))
                             }
                         </ul>
-
-                    </div>
-                </div>
-            </section>
-            <div className={`decoration decoration-${pokemon?.types[0].type.name}`}>
-                <section className='pokeinfo__m'>
-                    <div  className={`pokeinfo__container pokeinfo-${pokemon?.types[0].type.name}`}>
+                    <div  className='pokeinfo__container2'>
                         <h2 className='pokeinfo__title'>Movements</h2>
                         <ul className='pokeinfo__moves'>
                             {
@@ -85,9 +78,10 @@ const PokeInfo = () => {
                             }
                         </ul>
                     </div>
-                </section>
-            </div>
-        </div>
+                    </div>
+                </div>
+            </section>
+            </>
     )
 }
 

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import useFetch from '../../hooks/useFetch';
 
-const PokeSelect = (setSelectValue) => {
+const PokeSelect = ({setSelectValue}) => {
 
     const [types, getTypes] = useFetch(); 
 

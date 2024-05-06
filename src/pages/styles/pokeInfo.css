@@ -15,28 +15,14 @@
 .pokeinfo {
     background-color: white;
     width: 100vw;
-    height: 100vh;
-    padding-top: 100px;
+    height: 100%;
+    padding-top: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-x: hidden;
-    position: relative;
     font-family: 'Pokemon GB';
     scroll-behavior: smooth;
-}
-.pokeinfo__m {
-    background-color: white;
-    width: 100vw;
-    height: 100vh;
-    padding-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow-x: hidden;
-    position: static;
-    font-family: 'Pokemon GB';
-    scroll-behavior: smooth;
+    
 }
 .pokeinfo__container {
     width: 93.75%;
@@ -45,8 +31,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 5px solid #c0c0c0;
     border-radius: 10px;
+    border: 5px solid #c0c0c0;
 }
 .decoration {
     width: 100%;
@@ -62,6 +48,7 @@
     top: 10px;
 }
 .pokeinfo img {
+    margin-top: 100px;
     width: 250px;
     height: 250px;
 } 
@@ -79,8 +66,9 @@
     box-shadow: 0 0 15px 1px #dfdfdfdc;
 }
 .pokename {
+    text-transform: capitalize;
     font-size: 2rem;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 .pokeinfo__data {
     display: flex;
@@ -105,6 +93,7 @@
     padding: 10px 0;
 }
 .content__type {
+    margin: 15px 0;
     min-width: 250px;
     width: 45%;
     display: flex;
@@ -122,19 +111,10 @@
     padding: 10px 0;
 }
 .pokeinfo__title {
-    margin: 10px 0;
+    margin: 30px 0;
     font-size: 1.5rem;
+    text-transform: capitalize;
 }
-/* Type 
-.type {
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: transparent;
-}
- type */
 
 /* Skills */
 .pokeinfo__skill {
@@ -150,11 +130,23 @@
 /* Skills */
 
 /* Movement */
+.pokeinfo__container2 {
+    width: 100%;
+    height: fit-content;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin: 25px 0;
+}
+
 .pokeinfo__moves {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 5px;
+    gap: 15px;
     list-style: none;
 }
 .pokeinfo__moves li {
@@ -163,6 +155,10 @@
     background-color: #afafaf;
     padding: 5px 8px;
     width: 30%;
+    height: 50px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 /* Movement */

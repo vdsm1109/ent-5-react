@@ -26,7 +26,7 @@ const PokeCard = ({ url }) => {
                <figure className='pokecard__img'>
                     <img src={pokemon?.sprites.other['official-artwork'].front_default} alt="pokemonimage" />
                </figure>
-               <h3 className='pokecard__name'>{pokemon?.name}</h3>
+               <h3 className={`pokecard__name pokename-${pokemon?.types[0].type.name}`}>{pokemon?.name}</h3>
                <ul className='pokecard__types'>
                     {
                          pokemon?.types.map(type => (
@@ -53,3 +53,6 @@ const PokeCard = ({ url }) => {
      )
 }
 export default PokeCard;
+
+
+
